@@ -200,6 +200,8 @@ public class Registry {
       if (registerToSessionRegistry(qualifiedName, function) != null) {
         addFunction(functionName, function);
         return function;
+      } else {
+        return null;
       }
     }
     addFunction(functionName, function);
